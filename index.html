@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Custom Elements</title>
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+    <h1>Responsive Custom Element</h1>
+
+    <section class="article-list">
+        <custom-card 
+            data-image="https://fastly.picsum.photos/id/72/200/200.jpg?hmac=SvHJdhApYL5YL48lV8qJ_QmrFZ2IzRcMEt3Jf4-O1X0"
+            data-title="Custom Elements"
+            data-text="Sample Description lorem ipsum"
+            class="grid-child">
+        </custom-card>
+        <custom-card 
+            data-image="https://fastly.picsum.photos/id/96/200/200.jpg?hmac=OWdGKA_6EKn7IZEMPRZ-F_wvRBZlDHi-n9QCzIKJV_4"
+            data-title="Custom Elements 2"
+            data-text="Sample Description lorem ipsum 3"
+            class="grid-child">
+        </custom-card>
+        <custom-card 
+            data-image="https://fastly.picsum.photos/id/103/200/200.jpg?hmac=iAYeZbg7h6KXJzEJuemMnhxfHUPDu6OkgQ_TfAMWlRM"
+            data-title="Custom Elements 3"
+            data-text="Sample Description lorem ipsum 3"
+            class="grid-child">
+        </custom-card>
+    </section>
+
+    <h1>Custom Buttons</h1>
+    
+    <section class="custom-buttons">
+        <custom-button
+        data-size="lg"
+        data-color="#0079b1"
+        data-text="Lg Button"
+        data-bg=""
+        ></custom-button>
+        <custom-button
+        data-size="md"
+        data-color="#0079b1"
+        data-text="Md Button"
+        data-bg="filled"
+        ></custom-button>
+        <custom-button
+        data-size="sm"
+        data-color="#0079b1"
+        data-text="Sm Button"
+        data-bg="filled"
+        ></custom-button>
+    </section>
+    <script src="components/card.js"></script>
+    <script src="components/button.js"></script>
+    </body>
+</html>

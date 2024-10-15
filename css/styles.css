@@ -1,0 +1,30 @@
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1366px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    margin-block: 40px;
+    gap: 10px;
+}
+.article-list .grid-child {
+    grid-column: span 4;
+}
+
+@media (max-width: 1000px) {
+    .article-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .article-list .grid-child {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 600px) {
+    .article-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .article-list .grid-child {
+        grid-column: span 4;
+    }
+}
